@@ -9,7 +9,17 @@ import SwiftUI
 
 struct TestGradient: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            RoundedRectangle(cornerRadius: 24)
+                .fill(LinearGradient(colors: [Color("GradientStart"),Color("GradientEnd")], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .frame(width: 250, height: 150)
+            
+            RoundedRectangle(cornerRadius: 24)
+                .fill(RadialGradient(colors: [Color("GradientStart"), Color("GradientEnd")], center: .center, startRadius: 50, endRadius: 120))
+                .frame(width: 250, height: 150)
+                .padding(10)
+                
+        }
     }
 }
 

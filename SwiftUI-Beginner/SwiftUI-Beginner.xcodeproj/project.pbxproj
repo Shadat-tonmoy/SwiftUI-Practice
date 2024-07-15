@@ -14,6 +14,18 @@
 		4E4962EC2C398AC5004A0532 /* SwiftUI_BeginnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962EB2C398AC5004A0532 /* SwiftUI_BeginnerTests.swift */; };
 		4E4962F62C398AC5004A0532 /* SwiftUI_BeginnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962F52C398AC5004A0532 /* SwiftUI_BeginnerUITests.swift */; };
 		4E4962F82C398AC5004A0532 /* SwiftUI_BeginnerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962F72C398AC5004A0532 /* SwiftUI_BeginnerUITestsLaunchTests.swift */; };
+		4E4963052C398C5B004A0532 /* TestText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4963042C398C5B004A0532 /* TestText.swift */; };
+		4E4963072C3A46E5004A0532 /* TestShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4963062C3A46E5004A0532 /* TestShape.swift */; };
+		4E4963092C3A4BB5004A0532 /* TestColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4963082C3A4BB5004A0532 /* TestColor.swift */; };
+		4E49630B2C3A52C1004A0532 /* TestGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49630A2C3A52C1004A0532 /* TestGradient.swift */; };
+		4E49630D2C3A5B2F004A0532 /* TestIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49630C2C3A5B2F004A0532 /* TestIcon.swift */; };
+		4E49630F2C3A5E3F004A0532 /* TestImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E49630E2C3A5E3F004A0532 /* TestImage.swift */; };
+		4EB7F6A92C3E392200EC58CC /* InitializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7F6A82C3E392200EC58CC /* InitializerTest.swift */; };
+		4EB7F6AB2C3E3E8300EC58CC /* ForEachTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7F6AA2C3E3E8300EC58CC /* ForEachTest.swift */; };
+		4EB7F6AD2C3E41CF00EC58CC /* ScrollViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7F6AC2C3E41CF00EC58CC /* ScrollViewTest.swift */; };
+		4EC5A31C2C3CEB080087A7CD /* TestBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5A31B2C3CEB080087A7CD /* TestBackground.swift */; };
+		4EC5A31E2C3CFE010087A7CD /* TestStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5A31D2C3CFE010087A7CD /* TestStack.swift */; };
+		4EC5A3202C3D03400087A7CD /* TestPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5A31F2C3D03400087A7CD /* TestPadding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,18 @@
 		4E4962F12C398AC5004A0532 /* SwiftUI-BeginnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-BeginnerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4962F52C398AC5004A0532 /* SwiftUI_BeginnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BeginnerUITests.swift; sourceTree = "<group>"; };
 		4E4962F72C398AC5004A0532 /* SwiftUI_BeginnerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BeginnerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E4963042C398C5B004A0532 /* TestText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestText.swift; sourceTree = "<group>"; };
+		4E4963062C3A46E5004A0532 /* TestShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestShape.swift; sourceTree = "<group>"; };
+		4E4963082C3A4BB5004A0532 /* TestColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColor.swift; sourceTree = "<group>"; };
+		4E49630A2C3A52C1004A0532 /* TestGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGradient.swift; sourceTree = "<group>"; };
+		4E49630C2C3A5B2F004A0532 /* TestIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIcon.swift; sourceTree = "<group>"; };
+		4E49630E2C3A5E3F004A0532 /* TestImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImage.swift; sourceTree = "<group>"; };
+		4EB7F6A82C3E392200EC58CC /* InitializerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerTest.swift; sourceTree = "<group>"; };
+		4EB7F6AA2C3E3E8300EC58CC /* ForEachTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachTest.swift; sourceTree = "<group>"; };
+		4EB7F6AC2C3E41CF00EC58CC /* ScrollViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTest.swift; sourceTree = "<group>"; };
+		4EC5A31B2C3CEB080087A7CD /* TestBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBackground.swift; sourceTree = "<group>"; };
+		4EC5A31D2C3CFE010087A7CD /* TestStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStack.swift; sourceTree = "<group>"; };
+		4EC5A31F2C3D03400087A7CD /* TestPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPadding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,18 @@
 				4E4962DD2C398AC4004A0532 /* Assets.xcassets */,
 				4E4962DF2C398AC4004A0532 /* SwiftUI_Beginner.entitlements */,
 				4E4962E02C398AC4004A0532 /* Preview Content */,
+				4E4963042C398C5B004A0532 /* TestText.swift */,
+				4E4963062C3A46E5004A0532 /* TestShape.swift */,
+				4E4963082C3A4BB5004A0532 /* TestColor.swift */,
+				4EC5A31B2C3CEB080087A7CD /* TestBackground.swift */,
+				4E49630A2C3A52C1004A0532 /* TestGradient.swift */,
+				4E49630C2C3A5B2F004A0532 /* TestIcon.swift */,
+				4E49630E2C3A5E3F004A0532 /* TestImage.swift */,
+				4EC5A31D2C3CFE010087A7CD /* TestStack.swift */,
+				4EC5A31F2C3D03400087A7CD /* TestPadding.swift */,
+				4EB7F6A82C3E392200EC58CC /* InitializerTest.swift */,
+				4EB7F6AA2C3E3E8300EC58CC /* ForEachTest.swift */,
+				4EB7F6AC2C3E41CF00EC58CC /* ScrollViewTest.swift */,
 			);
 			path = "SwiftUI-Beginner";
 			sourceTree = "<group>";
@@ -259,8 +295,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB7F6A92C3E392200EC58CC /* InitializerTest.swift in Sources */,
 				4E4962DC2C398AC3004A0532 /* ContentView.swift in Sources */,
+				4EB7F6AB2C3E3E8300EC58CC /* ForEachTest.swift in Sources */,
+				4EC5A31C2C3CEB080087A7CD /* TestBackground.swift in Sources */,
+				4EC5A31E2C3CFE010087A7CD /* TestStack.swift in Sources */,
+				4EC5A3202C3D03400087A7CD /* TestPadding.swift in Sources */,
 				4E4962DA2C398AC3004A0532 /* SwiftUI_BeginnerApp.swift in Sources */,
+				4EB7F6AD2C3E41CF00EC58CC /* ScrollViewTest.swift in Sources */,
+				4E4963052C398C5B004A0532 /* TestText.swift in Sources */,
+				4E4963092C3A4BB5004A0532 /* TestColor.swift in Sources */,
+				4E49630D2C3A5B2F004A0532 /* TestIcon.swift in Sources */,
+				4E49630F2C3A5E3F004A0532 /* TestImage.swift in Sources */,
+				4E4963072C3A46E5004A0532 /* TestShape.swift in Sources */,
+				4E49630B2C3A52C1004A0532 /* TestGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,15 @@ import SwiftUI
 
 struct TestIcon: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image(systemName:"square.and.arrow.up.circle.fill")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .font(.system(size: 80))
+                .foregroundColor(.gradientEnd)
+                .frame(width: 200,height: 200)
+            
+        }
     }
 }
 

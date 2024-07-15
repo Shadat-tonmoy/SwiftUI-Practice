@@ -8,8 +8,46 @@
 import SwiftUI
 
 struct ForEachTest: View {
+    
+    let dummyArray = [
+      "Lorem",
+      "ipsum",
+      "dolor",
+      "sit",
+      "amet",
+      "consectetur",
+      "adipiscing",
+      "elit"
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment : .leading){
+            ForEach(0..<3) { index in
+                HStack{
+                    Circle()
+                        .fill(.purple)
+                        .frame(width: 40)
+                        .overlay{
+                            Text("\(index + 1)")
+                                .foregroundStyle(Color(.white))
+                        }
+                    Text("Hello : \(index)")
+                }
+            }
+            
+            ForEach(dummyArray.indices){ index in
+                Text(dummyArray[index])
+                    .foregroundStyle(Color(.white))
+                    .padding(.all, 10)
+                    .padding(.horizontal)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(.purple)
+                    )
+                
+            }
+        }
+        
     }
 }
 

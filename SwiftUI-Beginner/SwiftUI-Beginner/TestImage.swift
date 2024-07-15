@@ -9,7 +9,37 @@ import SwiftUI
 
 struct TestImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            Image("image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 150)
+                .cornerRadius(30)
+                
+            
+            RoundedRectangle(cornerRadius: 25.0)
+                .fill(.orange)
+                .frame(width: 200, height: 150)
+            
+            Image("image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 200)
+                .cornerRadius(100)
+            
+            Image("image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 200)
+                .clipShape(
+                    RoundedRectangle(cornerRadius: 10)
+                )
+            
+            
+        }
+        
+            
     }
 }
 

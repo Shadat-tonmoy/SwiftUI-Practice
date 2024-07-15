@@ -9,7 +9,22 @@ import SwiftUI
 
 struct TestColor: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            RoundedRectangle(cornerRadius: 24)
+                .fill(Color(UIColor.secondarySystemBackground))
+                .frame(width: 250, height: 150)
+                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .padding()
+            
+            RoundedRectangle(cornerRadius: 24)
+                .fill(Color("CustomColor"))
+                .frame(width: 250, height: 150)
+                .shadow(radius: 16)
+                .padding(10.0)
+
+        }
+        
+            
     }
 }
 
