@@ -9,7 +9,29 @@ import SwiftUI
 
 struct SafeAreaTest: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(.red)
+                .ignoresSafeArea(.all)
+            
+            ScrollView{
+                VStack{
+                    ForEach(0..<10){ index in
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: .infinity, height: 150)
+                            .padding()
+                            .foregroundStyle(Color(.white))
+                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    }
+                }
+    //            .background(
+    //                Color(.blue)
+    //            )
+            }
+//            .background(
+    //            Color(.red)
+//                .ignoresSafeArea(.all)
+//        )
+        }
     }
 }
 

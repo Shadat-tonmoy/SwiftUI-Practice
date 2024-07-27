@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct TestState: View {
+    
+    @State var backgroundColor = Color.red
+    
+    let dummyColors = [Color.red,Color.green,Color.blue,Color.purple,Color.yellow,Color.orange]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            backgroundColor
+                .ignoresSafeArea()
+            
+            VStack{
+                Text("Hello World!")
+                    .foregroundStyle(Color.white)
+                
+                Button(action: {
+                    let randomColor = dummyColors.randomElement()
+                    backgroundColor = randomColor ?? Color.red
+                    
+                }, label: {
+                    Text("Change Color")
+                        .padding()
+                        .foregroundStyle(backgroundColor)
+                        .background(
+                            RoundedRectangle(cornerRadius:10)
+                                .fill(Color.white)
+                                
+                        )
+                    
+                })
+            }
+        }
     }
 }
 
