@@ -8,11 +8,51 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    @ObservedObject var viewModel : TodoListViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(viewModel.todoItems, id: \.id) { item in
+                ListItemRowView(todoItem: item)
+                    .onTapGesture {
+                        viewModel.updateIsCompleted(todoItem: item)
+                    }
+                    
+            }
+            .onDelete(perform: viewModel.deleteItem)
+            .onMove(perform: viewModel.moveItem)
+        }
+        .listStyle(.plain)
+        .navigationTitle("Todo List")
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                EditButton()
+            }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink {
+                    AddNewToDoView()
+                    
+                } label: {
+                    Text("Add")
+                }
+
+            }
+            
+        
+        }
+    }
+    
+    var list = List {
+        
     }
 }
 
 #Preview {
-    ListView()
+    NavigationView {
+        ListView(viewModel: TodoListViewModel())
+            
+    }
+    
 }

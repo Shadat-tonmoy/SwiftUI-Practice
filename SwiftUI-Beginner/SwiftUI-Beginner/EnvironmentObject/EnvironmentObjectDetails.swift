@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct EnvironmentObjectDetails: View {
+    
+    var device : String
+    
+//    @ObservedObject var viewModel : EnvironmentObjectViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Details of \(device)")
+            .font(.largeTitle)
+        NavigationLink {
+//            EnvironmentObjectThirdView(viewModel: viewModel)
+            EnvironmentObjectThirdView()
+        } label: {
+            Text("Go to next")
+                .padding()
+                .foregroundStyle(.white)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+//                        .fill(.black)
+                )
+        }
+
     }
 }
 
 #Preview {
-    EnvironmentObjectDetails()
+    EnvironmentObjectDetails(device: "iPhone")
 }

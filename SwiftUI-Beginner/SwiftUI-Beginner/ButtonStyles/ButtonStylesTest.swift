@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ButtonStylesTest: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Button 1") {
+                
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 50)
+            
+        }
     }
 }
 

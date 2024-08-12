@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct AppStorageTest: View {
+    
+    @State var name : String? = "Shadat"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(name ?? "Enter name here")
+        
+        if let userName = name {
+            Text("User name is : \(userName)")
+        }
+        
+        Button(action: {
+            name = "Shadat Tonmoy"
+        }, label: {
+            Text("Update Name")
+        })
     }
 }
 

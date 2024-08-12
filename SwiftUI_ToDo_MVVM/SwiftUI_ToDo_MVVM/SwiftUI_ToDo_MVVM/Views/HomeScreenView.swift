@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    
+    @EnvironmentObject var viewModel : TodoListViewModel
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            if viewModel.todoItems.isEmpty {
+                EmptyListView()
+            } else {
+                ListView(viewModel: viewModel)
+            }
+        }
     }
 }
 
 #Preview {
-    HomeScreenView()
+    NavigationView {
+        HomeScreenView()
+            .environmentObject(TodoListViewModel())
+    }
+    
 }

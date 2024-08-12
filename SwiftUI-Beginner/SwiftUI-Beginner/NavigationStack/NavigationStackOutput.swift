@@ -9,7 +9,19 @@ import SwiftUI
 
 struct NavigationStackOutput: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+            Color(.systemOrange)
+            .ignoresSafeArea()
+            
+            Text("This Is The Output Screen")
+                .foregroundStyle(Color(.systemOrange))
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.white)
+                )
+        }
     }
 }
 

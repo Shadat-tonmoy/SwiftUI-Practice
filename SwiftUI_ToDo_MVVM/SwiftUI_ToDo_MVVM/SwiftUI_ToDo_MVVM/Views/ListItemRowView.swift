@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct ListItemRowView: View {
+    
+    let todoItem : TodoItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: todoItem.isCompleted ? "checkmark.circle" : "circle")
+                .foregroundStyle(todoItem.isCompleted ? .green : .red)
+            
+            Text(todoItem.title)
+                .padding(.horizontal,5)
+            Spacer()
+        }
     }
 }
 
 #Preview {
-    ListItemRowView()
+    ListItemRowView(todoItem: TodoItem(title: "Test", isCompleted: true))
 }

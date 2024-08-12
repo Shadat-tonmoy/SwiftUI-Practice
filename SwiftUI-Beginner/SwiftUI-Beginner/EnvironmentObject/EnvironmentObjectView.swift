@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct EnvironmentObjectView: View {
+    
+    @StateObject private var viewModel : EnvironmentObjectViewModel = EnvironmentObjectViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                List(viewModel.devices, id: \.self, rowContent: { item in
+                    NavigationLink {
+//                        EnvironmentObjectDetails(device: item, viewModel: viewModel)
+                        EnvironmentObjectDetails(device: item)
+                    } label: {
+                        Text(item)
+                            .font(.headline)
+                    }
+
+                    
+                    
+                })
+            }
+            .navigationTitle("Device List")
+        }
+        .environmentObject(viewModel)
     }
 }
 

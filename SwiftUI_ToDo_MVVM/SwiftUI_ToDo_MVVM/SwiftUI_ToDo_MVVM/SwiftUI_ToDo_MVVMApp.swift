@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct SwiftUI_ToDo_MVVMApp: App {
+    
+    @StateObject var viewModel : TodoListViewModel = TodoListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                HomeScreenView()
+            }
+            .environmentObject(viewModel)
+            
+            
         }
     }
 }

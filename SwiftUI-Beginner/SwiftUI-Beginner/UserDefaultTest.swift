@@ -8,8 +8,43 @@
 import SwiftUI
 
 struct UserDefaultTest: View {
+    
+    @StateObject var viewModel : UserDefaultTestViewModel = UserDefaultTestViewModel()
+    
+//    @State var userName : String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Enter name and tap save button")
+            
+            TextField("Enter name here", text: $viewModel.userName)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.gray.opacity(0.25))
+                )
+                .padding()
+            
+            Button(action: {
+                viewModel.saveUserNameToCache()
+            }, label: {
+                Text("Save")
+                    .padding()
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                    )
+                    .padding(.horizontal)
+            })
+            
+            Spacer()
+        }
+        .onAppear {
+            viewModel.getUserNameFromCache()
+//            userName =  viewModel.getUserNameFromCache()
+        }
     }
 }
 

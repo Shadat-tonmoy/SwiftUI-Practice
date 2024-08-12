@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+
+class EnvironmentObjectViewModel : ObservableObject {
+    
+    @Published var devices : [String] = []
+    
+    init() {
+        getDevices()
+    }
+    func getDevices() {
+        devices.append(contentsOf: ["iPhone 13", "iPad", "Mac Book Pro"])
+    }
+    
+}

@@ -9,7 +9,19 @@ import SwiftUI
 
 struct NavigationStackConvert: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+            Color(.systemTeal)
+            .ignoresSafeArea()
+            
+            Text("This Is The Conver Screen")
+                .foregroundStyle(Color(.systemTeal))
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.white)
+                )
+        }
     }
 }
 

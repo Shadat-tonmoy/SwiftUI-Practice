@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct EnvironmentObjectThirdView: View {
+    
+//    @State var viewModel : EnvironmentObjectViewModel
+    
+    @EnvironmentObject var viewModel : EnvironmentObjectViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(viewModel.devices, id: \.self, rowContent: { item in
+                Text("Hello \(item) from third screen")
+                
+            })
+            Text("This is the third view")
+        }
+        
     }
 }
 

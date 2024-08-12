@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct SwipeActionViewTest: View {
+    
+    @State var fruits : [String] = ["Apple","Banana","Mango","Guava"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(fruits, id: \.self, rowContent: { item in
+                Text(item)
+                    .padding()
+                    .swipeActions(edge: .trailing){
+                        Button("Delete", action: {
+                            
+                        }).tint(.red)
+                        
+                        Button("Seen", action: {
+                            
+                        }).tint(.green)
+                        
+                        Button("Archive", action: {
+                            
+                        }).tint(.blue)
+                    }
+                
+            })
+        }
     }
 }
 

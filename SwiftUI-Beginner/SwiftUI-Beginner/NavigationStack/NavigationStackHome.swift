@@ -9,7 +9,19 @@ import SwiftUI
 
 struct NavigationStackHome: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+            Color(.purple)
+            .ignoresSafeArea()
+            
+            Text("This Is The Home Screen")
+                .foregroundStyle(.purple)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.white)
+                )
+        }
     }
 }
 
