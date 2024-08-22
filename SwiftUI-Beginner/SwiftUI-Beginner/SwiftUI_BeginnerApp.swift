@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUI_BeginnerApp: App {
     var body: some Scene {
         WindowGroup {
-            ToolbarTest()
+            GridViewTest()
         }
+        
     }
 }
