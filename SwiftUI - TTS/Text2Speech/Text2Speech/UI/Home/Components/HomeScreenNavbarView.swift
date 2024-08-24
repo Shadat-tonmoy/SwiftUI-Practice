@@ -7,23 +7,22 @@
 
 import SwiftUI
 
-struct NavbarView: View {
+struct HomeScreenNavbarView: View {
     var body: some View {
         HStack {
-            Image(systemName: "line.3.horizontal")
+            Image(systemName: KImages.HamburgerIcon)
                 .foregroundStyle(.white)
                 .font(.system(size: 20))
                 .padding(.horizontal)
             
             Spacer()
             
-            Text("Text2Speech")
-                .font(.title3)
+            Text(KStrings.Text2Speech)
                 .foregroundStyle(.white)
             
             Spacer()
             
-            Image(systemName: "crown.fill")
+            Image(systemName: KImages.PremiumIcon)
                 .foregroundStyle(.orange)
                 .font(.system(size: 20))
                 .padding(.horizontal)
@@ -39,5 +38,5 @@ struct NavbarView: View {
 }
 
 #Preview {
-    NavbarView()
+    HomeScreenNavbarView()
 }

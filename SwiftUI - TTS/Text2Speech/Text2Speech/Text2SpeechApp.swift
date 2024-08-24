@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct Text2SpeechApp: App {
+    
+    @State var navigationPath = ScreenNavigator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeScreenTab()
+                    .preferredColorScheme(.dark)
+                    .environmentObject(navigationPath)
+            }
+            
+            
+            
         }
     }
 }

@@ -73,6 +73,16 @@ struct GridTestHome: View {
                             screenNavigator.openPlaySoundScreen()
                         }
                     
+                    GridItemButton(iconName: "note", title: "Hashable")
+                        .onTapGesture {
+                            screenNavigator.openHashableScreen()
+                        }
+                    
+                    GridItemButton(iconName: "note", title: "Search Sort")
+                        .onTapGesture {
+                            screenNavigator.openSearchSortScreen()
+                        }
+                    
                 })
                 
             }

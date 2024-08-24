@@ -35,6 +35,10 @@ struct GridViewTest: View {
                     MaskTest()
                 case .playSound:
                     PlaySoundTest()
+                case .hashable:
+                    HashableTest()
+                case .searchSort:
+                    SearchSortTest()
                 }
                 
             })
@@ -58,6 +62,8 @@ enum GridTestPath {
     case geometryReader
     case mask
     case playSound
+    case hashable
+    case searchSort
 }
 
 

@@ -58,6 +58,18 @@ class ScreenNavigator : ObservableObject {
     
     }
     
+    func openHashableScreen() {
+        paths.append(.hashable)
+        print("Opening hashable screen")
+        otherScreen = true
+    }
+    
+    func openSearchSortScreen() {
+        paths.append(.searchSort)
+        print("Opening search sort screen")
+        otherScreen = true
+    }
+    
     
     
     

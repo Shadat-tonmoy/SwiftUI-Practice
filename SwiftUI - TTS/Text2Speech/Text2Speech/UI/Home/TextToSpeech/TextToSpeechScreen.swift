@@ -8,24 +8,35 @@
 import SwiftUI
 
 struct TextToSpeechScreen: View {
+    
+    @StateObject private var viewModel = TextToSpeechViewModel()
+    
+    init() {
+        print("TextToSpeechScreen init")
+    }
+    
+    
     var body: some View {
         ZStack {
             VStack {
-                NavbarView()
+                HomeScreenNavbarView()
                 
                 ScrollView {
-                    HomeScreenInputView()
+                    
+                    TTSInputView(viewModel: viewModel)
                     
                     ControlAudioView()
                 }
             }
             
         }
+        
     }
 }
 
 #Preview {
     TextToSpeechScreen()
+        .environmentObject(ScreenNavigator())
 }
 
 

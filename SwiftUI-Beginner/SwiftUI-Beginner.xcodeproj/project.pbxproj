@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4E0D441B2C4784E100A21E9C /* TestTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D441A2C4784E100A21E9C /* TestTextEditor.swift */; };
 		4E0D441D2C47898300A21E9C /* TestPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D441C2C47898300A21E9C /* TestPicker.swift */; };
+		4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */; };
+		4E1C9E522C79A8350058D1EC /* SearchSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */; };
 		4E4962DA2C398AC3004A0532 /* SwiftUI_BeginnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962D92C398AC3004A0532 /* SwiftUI_BeginnerApp.swift */; };
 		4E4962DC2C398AC3004A0532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962DB2C398AC3004A0532 /* ContentView.swift */; };
 		4E4962DE2C398AC4004A0532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4962DD2C398AC4004A0532 /* Assets.xcassets */; };
@@ -99,6 +101,8 @@
 /* Begin PBXFileReference section */
 		4E0D441A2C4784E100A21E9C /* TestTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTextEditor.swift; sourceTree = "<group>"; };
 		4E0D441C2C47898300A21E9C /* TestPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPicker.swift; sourceTree = "<group>"; };
+		4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTest.swift; sourceTree = "<group>"; };
+		4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSortTest.swift; sourceTree = "<group>"; };
 		4E4962D62C398AC3004A0532 /* SwiftUI-Beginner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Beginner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4962D92C398AC3004A0532 /* SwiftUI_BeginnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BeginnerApp.swift; sourceTree = "<group>"; };
 		4E4962DB2C398AC3004A0532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -331,6 +335,8 @@
 				4E7809B32C6DF73400ABD46F /* GeometryReaderTest.swift */,
 				4EC432192C70A0BC002E6FC4 /* MaskTest.swift */,
 				4EC4321B2C731486002E6FC4 /* PlaySoundTest.swift */,
+				4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */,
+				4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */,
 			);
 			path = GridTest;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				4EF95C9F2C41A17100CAE360 /* TestSheet.swift in Sources */,
 				4EC5A31E2C3CFE010087A7CD /* TestStack.swift in Sources */,
 				4EB7F6B32C3E556F00EC58CC /* SafeAreaTest.swift in Sources */,
+				4E1C9E522C79A8350058D1EC /* SearchSortTest.swift in Sources */,
 				4EA558BD2C59FC4E007EFEBB /* SwipeActionViewTest.swift in Sources */,
 				4EC5A3202C3D03400087A7CD /* TestPadding.swift in Sources */,
 				4E76E0C52C69268F004EBA79 /* ToolbarTest.swift in Sources */,
@@ -575,6 +582,7 @@
 				4E4962DA2C398AC3004A0532 /* SwiftUI_BeginnerApp.swift in Sources */,
 				4E7809B42C6DF73400ABD46F /* GeometryReaderTest.swift in Sources */,
 				4E9896902C6C9D2A005DD7EB /* GridTestRotation.swift in Sources */,
+				4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */,
 				4EB7F6AD2C3E41CF00EC58CC /* ScrollViewTest.swift in Sources */,
 				4ED866732C58AECA00E19B34 /* BackgroundMaterialTest.swift in Sources */,
 				4E98968C2C6C9BB4005DD7EB /* GridTestHome.swift in Sources */,
