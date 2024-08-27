@@ -83,6 +83,11 @@ struct GridTestHome: View {
                             screenNavigator.openSearchSortScreen()
                         }
                     
+                    GridItemButton(iconName: "rectangle.fill.on.rectangle.fill", title: "Core Data")
+                        .onTapGesture {
+                            screenNavigator.openCoreDataTestScreen()
+                        }
+                    
                 })
                 
             }

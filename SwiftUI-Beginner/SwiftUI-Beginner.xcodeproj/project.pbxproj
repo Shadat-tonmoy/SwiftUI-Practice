@@ -79,6 +79,9 @@
 		4EF95C9F2C41A17100CAE360 /* TestSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF95C9E2C41A17100CAE360 /* TestSheet.swift */; };
 		4EF95CA12C44E23F00CAE360 /* TestNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF95CA02C44E23F00CAE360 /* TestNavigation.swift */; };
 		4EF95CA32C44F72900CAE360 /* TestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF95CA22C44F72900CAE360 /* TestList.swift */; };
+		4EFB1E6C2C7E4DF800518E89 /* CoreDataTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB1E6B2C7E4DF800518E89 /* CoreDataTestView.swift */; };
+		4EFB1E6E2C7E4E0700518E89 /* CoreDataTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB1E6D2C7E4E0700518E89 /* CoreDataTestViewModel.swift */; };
+		4EFB1E712C7E4EA100518E89 /* FruitsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB1E6F2C7E4EA100518E89 /* FruitsDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +178,9 @@
 		4EF95C9E2C41A17100CAE360 /* TestSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSheet.swift; sourceTree = "<group>"; };
 		4EF95CA02C44E23F00CAE360 /* TestNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigation.swift; sourceTree = "<group>"; };
 		4EF95CA22C44F72900CAE360 /* TestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestList.swift; sourceTree = "<group>"; };
+		4EFB1E6B2C7E4DF800518E89 /* CoreDataTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestView.swift; sourceTree = "<group>"; };
+		4EFB1E6D2C7E4E0700518E89 /* CoreDataTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestViewModel.swift; sourceTree = "<group>"; };
+		4EFB1E702C7E4EA100518E89 /* FruitsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +330,7 @@
 		4E9896862C6C6C21005DD7EB /* GridTest */ = {
 			isa = PBXGroup;
 			children = (
+				4EFB1E6A2C7E4DE300518E89 /* CoreDataTest */,
 				4E9896892C6C6C49005DD7EB /* GridViewTest.swift */,
 				4E98968B2C6C9BB4005DD7EB /* GridTestHome.swift */,
 				4E98968D2C6C9CE3005DD7EB /* GridTestMagnification.swift */,
@@ -410,6 +417,16 @@
 				4EE58E342C57614900C3C26E /* EnvironmentObjectThirdView.swift */,
 			);
 			path = EnvironmentObject;
+			sourceTree = "<group>";
+		};
+		4EFB1E6A2C7E4DE300518E89 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				4EFB1E6B2C7E4DF800518E89 /* CoreDataTestView.swift */,
+				4EFB1E6D2C7E4E0700518E89 /* CoreDataTestViewModel.swift */,
+				4EFB1E6F2C7E4EA100518E89 /* FruitsDataModel.xcdatamodeld */,
+			);
+			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,6 +584,7 @@
 				4EC5A31E2C3CFE010087A7CD /* TestStack.swift in Sources */,
 				4EB7F6B32C3E556F00EC58CC /* SafeAreaTest.swift in Sources */,
 				4E1C9E522C79A8350058D1EC /* SearchSortTest.swift in Sources */,
+				4EFB1E6C2C7E4DF800518E89 /* CoreDataTestView.swift in Sources */,
 				4EA558BD2C59FC4E007EFEBB /* SwipeActionViewTest.swift in Sources */,
 				4EC5A3202C3D03400087A7CD /* TestPadding.swift in Sources */,
 				4E76E0C52C69268F004EBA79 /* ToolbarTest.swift in Sources */,
@@ -579,6 +597,7 @@
 				4E76E0BE2C68CBBF004EBA79 /* NavigationStackConvert.swift in Sources */,
 				4E6F57BE2C3FA24100B83630 /* TestButton.swift in Sources */,
 				4EF95CA12C44E23F00CAE360 /* TestNavigation.swift in Sources */,
+				4EFB1E712C7E4EA100518E89 /* FruitsDataModel.xcdatamodeld in Sources */,
 				4E4962DA2C398AC3004A0532 /* SwiftUI_BeginnerApp.swift in Sources */,
 				4E7809B42C6DF73400ABD46F /* GeometryReaderTest.swift in Sources */,
 				4E9896902C6C9D2A005DD7EB /* GridTestRotation.swift in Sources */,
@@ -588,6 +607,7 @@
 				4E98968C2C6C9BB4005DD7EB /* GridTestHome.swift in Sources */,
 				4E7809AE2C6DB42A00ABD46F /* ScrollViewReaderTest.swift in Sources */,
 				4ED866702C58AC6400E19B34 /* AsyncImageTest.swift in Sources */,
+				4EFB1E6E2C7E4E0700518E89 /* CoreDataTestViewModel.swift in Sources */,
 				4E4963052C398C5B004A0532 /* TestText.swift in Sources */,
 				4E0D441B2C4784E100A21E9C /* TestTextEditor.swift in Sources */,
 				4E4963092C3A4BB5004A0532 /* TestColor.swift in Sources */,
@@ -957,6 +977,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4EFB1E6F2C7E4EA100518E89 /* FruitsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4EFB1E702C7E4EA100518E89 /* FruitsDataModel.xcdatamodel */,
+			);
+			currentVersion = 4EFB1E702C7E4EA100518E89 /* FruitsDataModel.xcdatamodel */;
+			name = FruitsDataModel.xcdatamodeld;
+			path = "/Users/shadatmufakhkhartonmoy/Desktop/Codes/Learning/SwiftUILearning/SwiftUI-Beginner/SwiftUI-Beginner/GridTest/CoreDataTest/FruitsDataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E4962CE2C398AC3004A0532 /* Project object */;
 }

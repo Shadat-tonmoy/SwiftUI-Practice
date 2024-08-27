@@ -70,6 +70,12 @@ class ScreenNavigator : ObservableObject {
         otherScreen = true
     }
     
+    func openCoreDataTestScreen() {
+        paths.append(.coreDataTest)
+        print("Opening core data test screen")
+        otherScreen = true
+    }
+    
     
     
     

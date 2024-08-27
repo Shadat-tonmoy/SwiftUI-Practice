@@ -39,6 +39,8 @@ struct GridViewTest: View {
                     HashableTest()
                 case .searchSort:
                     SearchSortTest()
+                case .coreDataTest:
+                    CoreDataTestView()
                 }
                 
             })
@@ -64,6 +66,7 @@ enum GridTestPath {
     case playSound
     case hashable
     case searchSort
+    case coreDataTest
 }
 
 
