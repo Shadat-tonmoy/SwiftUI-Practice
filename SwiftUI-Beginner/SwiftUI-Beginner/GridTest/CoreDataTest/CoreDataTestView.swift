@@ -17,6 +17,7 @@ struct CoreDataTestView: View {
     @State var showEditTaskSheet = false
     @State var taskToEdit : FruitEntity? = nil
     @Environment(\.dismiss) var dismiss
+
     
     var body: some View {
         ZStack {
