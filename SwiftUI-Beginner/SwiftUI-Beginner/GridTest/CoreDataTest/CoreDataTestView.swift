@@ -17,7 +17,7 @@ struct CoreDataTestView: View {
     @State var showEditTaskSheet = false
     @State var taskToEdit : FruitEntity? = nil
     @Environment(\.dismiss) var dismiss
-
+    
     
     var body: some View {
         ZStack {
@@ -29,21 +29,29 @@ struct CoreDataTestView: View {
             }
             
             VStack {
-                List(viewModel.taskList) { fruit in
+                List(viewModel.taskList) { task in
                     HStack {
-                        Text(fruit.title ?? "N/A")
+                        Text(task.title ?? "N/A")
+                            .strikethrough(task.isDone, color: .white)
                         
+                        Spacer()
+                        
+                        if task.isDone {
+                            DoneIcon
+                        }
                     }
                     .listRowBackground(EmptyView())
                     .listRowSeparator(.hidden)
                     .contextMenu(menuItems: {
-                        Button(action: { editTaskItem(fruit) },
+                        Button(action: { editTaskItem(task) },
                                label: { editMenu } )
                         
-                        Button(action: { deleteTaskItem(fruit)},
+                        Button(action: { deleteTaskItem(task)},
                                label: { deleteMenu } )
                     })
-                    
+                    .onTapGesture {
+                        viewModel.updateTaskDoneState(task)
+                    }
                     
                 }
                 .listStyle(.plain)
@@ -100,14 +108,14 @@ struct CoreDataTestView: View {
     
     
     private func editTaskItem(_ fruit : FruitEntity) {
-//        print("Edit Fruit Item : \(fruit.title)")
+        //        print("Edit Fruit Item : \(fruit.title)")
         taskToEdit = fruit
         showEditTaskSheet.toggle()
         
     }
     
     private func deleteTaskItem(_ fruit : FruitEntity) {
-        print("Delete Fruit Item : \(fruit.title)")
+        viewModel.deleteFruit(fruit: fruit)
     }
     
     private var editMenu : some View {
@@ -147,6 +155,16 @@ struct CoreDataTestView: View {
     private func shouldShowBlugBG() -> Bool {
         return showSheet || showEditTaskSheet
     }
+    
+    let DoneIcon: some View = Image(systemName: "checkmark.circle.fill")
+        .resizable()
+        .scaledToFill()
+        .frame(width: 18, height: 18)
+        .foregroundStyle(.green)
+        .background(
+            Circle()
+                .fill(.white)
+        )
 }
 
 
@@ -160,16 +178,16 @@ struct AddTaskView : View {
     var body: some View {
         VStack(alignment : .leading) {
             
-            FruitFieldHeader(title: "Add Fruit", showSheet: $showSheet)
+            FruitFieldHeader(title: "Add Task", showSheet: $showSheet)
             
-            TextField("Enter fruit name", text: $fruitName)
+            TextField("Enter task name", text: $fruitName)
                 .modifier(FruitFieldModifier())
             
             
             Button(action: {
                 addFruitDelegate(fruitName)
             }, label: {
-                FruitFieldDoneButton(label: "Add Fruit")
+                FruitFieldDoneButton(label: "Done")
             })
             .modifier(FruitFieldDoneButtonModifier())
             

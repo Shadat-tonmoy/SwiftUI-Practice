@@ -64,8 +64,8 @@ class CoreDataTestViewModel : ObservableObject {
         saveData()
     }
     
-    func updateFruitLikedState(fruit : FruitEntity, value : Bool) {
-        fruit.isFavorite = value
+    func updateTaskDoneState(_ task : FruitEntity) {
+        task.isDone = !task.isDone
         saveData()
     }
     
