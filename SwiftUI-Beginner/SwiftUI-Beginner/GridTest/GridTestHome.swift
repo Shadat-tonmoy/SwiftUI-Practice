@@ -88,6 +88,11 @@ struct GridTestHome: View {
                             screenNavigator.openCoreDataTestScreen()
                         }
                     
+                    GridItemButton(iconName: "greetingcard.fill", title: "Background Thread")
+                        .onTapGesture {
+                            screenNavigator.openThreadTestScreen()
+                        }
+                    
                 })
                 
             }

@@ -41,6 +41,8 @@ struct GridViewTest: View {
                     SearchSortTest()
                 case .coreDataTest:
                     CoreDataTestView()
+                case .threadTest:
+                    BackgroundThreadTestView()
                 }
                 
             })
@@ -67,6 +69,7 @@ enum GridTestPath {
     case hashable
     case searchSort
     case coreDataTest
+    case threadTest
 }
 
 

@@ -76,6 +76,12 @@ class ScreenNavigator : ObservableObject {
         otherScreen = true
     }
     
+    func openThreadTestScreen(){
+        paths.append(.threadTest)
+        print("Opening thread test screen")
+        otherScreen = true
+    }
+    
     
     
     

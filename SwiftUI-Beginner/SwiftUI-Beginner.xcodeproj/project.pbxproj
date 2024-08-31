@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4E0D441B2C4784E100A21E9C /* TestTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D441A2C4784E100A21E9C /* TestTextEditor.swift */; };
 		4E0D441D2C47898300A21E9C /* TestPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D441C2C47898300A21E9C /* TestPicker.swift */; };
+		4E1694612C820B730021F5B5 /* BackgroundThreadTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1694602C820B730021F5B5 /* BackgroundThreadTestView.swift */; };
+		4E1694632C820B810021F5B5 /* BackgroundThreadTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */; };
 		4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */; };
 		4E1C9E522C79A8350058D1EC /* SearchSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */; };
 		4E4962DA2C398AC3004A0532 /* SwiftUI_BeginnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962D92C398AC3004A0532 /* SwiftUI_BeginnerApp.swift */; };
@@ -104,6 +106,8 @@
 /* Begin PBXFileReference section */
 		4E0D441A2C4784E100A21E9C /* TestTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTextEditor.swift; sourceTree = "<group>"; };
 		4E0D441C2C47898300A21E9C /* TestPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPicker.swift; sourceTree = "<group>"; };
+		4E1694602C820B730021F5B5 /* BackgroundThreadTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadTestView.swift; sourceTree = "<group>"; };
+		4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadTestViewModel.swift; sourceTree = "<group>"; };
 		4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTest.swift; sourceTree = "<group>"; };
 		4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSortTest.swift; sourceTree = "<group>"; };
 		4E4962D62C398AC3004A0532 /* SwiftUI-Beginner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Beginner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +212,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E16945F2C820B620021F5B5 /* BackgroundThreadTest */ = {
+			isa = PBXGroup;
+			children = (
+				4E1694602C820B730021F5B5 /* BackgroundThreadTestView.swift */,
+				4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */,
+			);
+			path = BackgroundThreadTest;
+			sourceTree = "<group>";
+		};
 		4E4962CD2C398AC3004A0532 = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +343,7 @@
 		4E9896862C6C6C21005DD7EB /* GridTest */ = {
 			isa = PBXGroup;
 			children = (
+				4E16945F2C820B620021F5B5 /* BackgroundThreadTest */,
 				4EFB1E6A2C7E4DE300518E89 /* CoreDataTest */,
 				4E9896892C6C6C49005DD7EB /* GridViewTest.swift */,
 				4E98968B2C6C9BB4005DD7EB /* GridTestHome.swift */,
@@ -569,6 +583,7 @@
 				4EA558C02C59FFD7007EFEBB /* FocusStateViewTest.swift in Sources */,
 				4E76E0BC2C68CBB2004EBA79 /* NavigationStackHome.swift in Sources */,
 				4ED866692C58A2E400E19B34 /* UserDefaultTest.swift in Sources */,
+				4E1694612C820B730021F5B5 /* BackgroundThreadTestView.swift in Sources */,
 				4E4962DC2C398AC3004A0532 /* ContentView.swift in Sources */,
 				4EA558C22C5A06B5007EFEBB /* FocusStateViewModel.swift in Sources */,
 				4ED866672C58A0A200E19B34 /* AppStorageTest.swift in Sources */,
@@ -604,6 +619,7 @@
 				4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */,
 				4EB7F6AD2C3E41CF00EC58CC /* ScrollViewTest.swift in Sources */,
 				4ED866732C58AECA00E19B34 /* BackgroundMaterialTest.swift in Sources */,
+				4E1694632C820B810021F5B5 /* BackgroundThreadTestViewModel.swift in Sources */,
 				4E98968C2C6C9BB4005DD7EB /* GridTestHome.swift in Sources */,
 				4E7809AE2C6DB42A00ABD46F /* ScrollViewReaderTest.swift in Sources */,
 				4ED866702C58AC6400E19B34 /* AsyncImageTest.swift in Sources */,
