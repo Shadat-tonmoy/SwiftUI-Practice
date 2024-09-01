@@ -82,6 +82,12 @@ class ScreenNavigator : ObservableObject {
         otherScreen = true
     }
     
+    func openNetworkingTestScreen() {
+        paths.append(.networkTest)
+        print("OPening network test scree")
+        otherScreen = true
+    }
+    
     
     
     

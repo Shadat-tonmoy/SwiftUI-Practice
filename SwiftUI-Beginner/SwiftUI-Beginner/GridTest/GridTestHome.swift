@@ -88,9 +88,9 @@ struct GridTestHome: View {
                             screenNavigator.openCoreDataTestScreen()
                         }
                     
-                    GridItemButton(iconName: "greetingcard.fill", title: "Background Thread")
+                    GridItemButton(iconName: "globe", title: "Networking")
                         .onTapGesture {
-                            screenNavigator.openThreadTestScreen()
+                            screenNavigator.openNetworkingTestScreen()
                         }
                     
                 })

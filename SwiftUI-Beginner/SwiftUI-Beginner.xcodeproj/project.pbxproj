@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4E0D441B2C4784E100A21E9C /* TestTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D441A2C4784E100A21E9C /* TestTextEditor.swift */; };
 		4E0D441D2C47898300A21E9C /* TestPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D441C2C47898300A21E9C /* TestPicker.swift */; };
+		4E0D4AB52C833EC000A8EA0D /* NetworkTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D4AB42C833EC000A8EA0D /* NetworkTestView.swift */; };
+		4E0D4AB72C833ED300A8EA0D /* NetworkTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D4AB62C833ED300A8EA0D /* NetworkTestViewModel.swift */; };
 		4E1694612C820B730021F5B5 /* BackgroundThreadTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1694602C820B730021F5B5 /* BackgroundThreadTestView.swift */; };
 		4E1694632C820B810021F5B5 /* BackgroundThreadTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */; };
 		4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */; };
@@ -34,6 +36,7 @@
 		4E6A686F2C48DDC7009C8C0C /* TabTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A686E2C48DDC7009C8C0C /* TabTest.swift */; };
 		4E6F57BE2C3FA24100B83630 /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F57BD2C3FA24100B83630 /* TestButton.swift */; };
 		4E6F57C02C3FA98B00B83630 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F57BF2C3FA98B00B83630 /* TestState.swift */; };
+		4E749A6F2C84B933007C543F /* PostDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E749A6E2C84B933007C543F /* PostDetailsScreen.swift */; };
 		4E76E0BC2C68CBB2004EBA79 /* NavigationStackHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76E0BB2C68CBB2004EBA79 /* NavigationStackHome.swift */; };
 		4E76E0BE2C68CBBF004EBA79 /* NavigationStackConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76E0BD2C68CBBF004EBA79 /* NavigationStackConvert.swift */; };
 		4E76E0C02C68CBCB004EBA79 /* NavigationStackOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76E0BF2C68CBCB004EBA79 /* NavigationStackOutput.swift */; };
@@ -106,6 +109,8 @@
 /* Begin PBXFileReference section */
 		4E0D441A2C4784E100A21E9C /* TestTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTextEditor.swift; sourceTree = "<group>"; };
 		4E0D441C2C47898300A21E9C /* TestPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPicker.swift; sourceTree = "<group>"; };
+		4E0D4AB42C833EC000A8EA0D /* NetworkTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestView.swift; sourceTree = "<group>"; };
+		4E0D4AB62C833ED300A8EA0D /* NetworkTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestViewModel.swift; sourceTree = "<group>"; };
 		4E1694602C820B730021F5B5 /* BackgroundThreadTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadTestView.swift; sourceTree = "<group>"; };
 		4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadTestViewModel.swift; sourceTree = "<group>"; };
 		4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTest.swift; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		4E6A686E2C48DDC7009C8C0C /* TabTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTest.swift; sourceTree = "<group>"; };
 		4E6F57BD2C3FA24100B83630 /* TestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
 		4E6F57BF2C3FA98B00B83630 /* TestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestState.swift; sourceTree = "<group>"; };
+		4E749A6E2C84B933007C543F /* PostDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsScreen.swift; sourceTree = "<group>"; };
 		4E76E0BB2C68CBB2004EBA79 /* NavigationStackHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackHome.swift; sourceTree = "<group>"; };
 		4E76E0BD2C68CBBF004EBA79 /* NavigationStackConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackConvert.swift; sourceTree = "<group>"; };
 		4E76E0BF2C68CBCB004EBA79 /* NavigationStackOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackOutput.swift; sourceTree = "<group>"; };
@@ -212,6 +218,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0D4AB32C833EA900A8EA0D /* NetworkingTest */ = {
+			isa = PBXGroup;
+			children = (
+				4E0D4AB42C833EC000A8EA0D /* NetworkTestView.swift */,
+				4E0D4AB62C833ED300A8EA0D /* NetworkTestViewModel.swift */,
+				4E749A6E2C84B933007C543F /* PostDetailsScreen.swift */,
+			);
+			path = NetworkingTest;
+			sourceTree = "<group>";
+		};
 		4E16945F2C820B620021F5B5 /* BackgroundThreadTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +359,7 @@
 		4E9896862C6C6C21005DD7EB /* GridTest */ = {
 			isa = PBXGroup;
 			children = (
+				4E0D4AB32C833EA900A8EA0D /* NetworkingTest */,
 				4E16945F2C820B620021F5B5 /* BackgroundThreadTest */,
 				4EFB1E6A2C7E4DE300518E89 /* CoreDataTest */,
 				4E9896892C6C6C49005DD7EB /* GridViewTest.swift */,
@@ -618,6 +635,7 @@
 				4E9896902C6C9D2A005DD7EB /* GridTestRotation.swift in Sources */,
 				4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */,
 				4EB7F6AD2C3E41CF00EC58CC /* ScrollViewTest.swift in Sources */,
+				4E0D4AB72C833ED300A8EA0D /* NetworkTestViewModel.swift in Sources */,
 				4ED866732C58AECA00E19B34 /* BackgroundMaterialTest.swift in Sources */,
 				4E1694632C820B810021F5B5 /* BackgroundThreadTestViewModel.swift in Sources */,
 				4E98968C2C6C9BB4005DD7EB /* GridTestHome.swift in Sources */,
@@ -628,11 +646,13 @@
 				4E0D441B2C4784E100A21E9C /* TestTextEditor.swift in Sources */,
 				4E4963092C3A4BB5004A0532 /* TestColor.swift in Sources */,
 				4E49630D2C3A5B2F004A0532 /* TestIcon.swift in Sources */,
+				4E0D4AB52C833EC000A8EA0D /* NetworkTestView.swift in Sources */,
 				4EE58E2F2C575DA400C3C26E /* EnvironmentObjectViewModel.swift in Sources */,
 				4EB7F6AF2C3E467200EC58CC /* GridTest.swift in Sources */,
 				4ED866782C58B5E900E19B34 /* ButtonStylesTest.swift in Sources */,
 				4EA918422C46B8160004DEB8 /* TestAlert.swift in Sources */,
 				4E6984BE2C40E1BF006550B5 /* TestExtraction.swift in Sources */,
+				4E749A6F2C84B933007C543F /* PostDetailsScreen.swift in Sources */,
 				4E547A7D2C60A51000EF8DF7 /* NavStackScreen3.swift in Sources */,
 				4EE58E352C57614900C3C26E /* EnvironmentObjectThirdView.swift in Sources */,
 				4E49630F2C3A5E3F004A0532 /* TestImage.swift in Sources */,
