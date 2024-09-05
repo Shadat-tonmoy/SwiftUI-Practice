@@ -45,6 +45,8 @@ struct GridViewTest: View {
                     BackgroundThreadTestView()
                 case .networkTest:
                     NetworkTestView()
+                case .fileManagerTest:
+                    FileManagerTestView()
                 }
                 
             })
@@ -73,6 +75,7 @@ enum GridTestPath {
     case coreDataTest
     case threadTest
     case networkTest
+    case fileManagerTest
 }
 
 

@@ -93,6 +93,11 @@ struct GridTestHome: View {
                             screenNavigator.openNetworkingTestScreen()
                         }
                     
+                    GridItemButton(iconName: "doc.zipper", title: "File Manager")
+                        .onTapGesture {
+                            screenNavigator.openFileManagerTestScreen()
+                        }
+                    
                 })
                 
             }

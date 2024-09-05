@@ -37,6 +37,9 @@
 		4E6F57BE2C3FA24100B83630 /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F57BD2C3FA24100B83630 /* TestButton.swift */; };
 		4E6F57C02C3FA98B00B83630 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F57BF2C3FA98B00B83630 /* TestState.swift */; };
 		4E749A6F2C84B933007C543F /* PostDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E749A6E2C84B933007C543F /* PostDetailsScreen.swift */; };
+		4E749A722C84CEC8007C543F /* FileManagerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E749A712C84CEC8007C543F /* FileManagerTestView.swift */; };
+		4E749A742C84CEE6007C543F /* FileManageTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E749A732C84CEE6007C543F /* FileManageTestViewModel.swift */; };
+		4E749A762C84D6E0007C543F /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E749A752C84D6E0007C543F /* FileManagerHelper.swift */; };
 		4E76E0BC2C68CBB2004EBA79 /* NavigationStackHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76E0BB2C68CBB2004EBA79 /* NavigationStackHome.swift */; };
 		4E76E0BE2C68CBBF004EBA79 /* NavigationStackConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76E0BD2C68CBBF004EBA79 /* NavigationStackConvert.swift */; };
 		4E76E0C02C68CBCB004EBA79 /* NavigationStackOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76E0BF2C68CBCB004EBA79 /* NavigationStackOutput.swift */; };
@@ -141,6 +144,10 @@
 		4E6F57BD2C3FA24100B83630 /* TestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
 		4E6F57BF2C3FA98B00B83630 /* TestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestState.swift; sourceTree = "<group>"; };
 		4E749A6E2C84B933007C543F /* PostDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsScreen.swift; sourceTree = "<group>"; };
+		4E749A712C84CEC8007C543F /* FileManagerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTestView.swift; sourceTree = "<group>"; };
+		4E749A732C84CEE6007C543F /* FileManageTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManageTestViewModel.swift; sourceTree = "<group>"; };
+		4E749A752C84D6E0007C543F /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		4E749A772C84DBFE007C543F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4E76E0BB2C68CBB2004EBA79 /* NavigationStackHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackHome.swift; sourceTree = "<group>"; };
 		4E76E0BD2C68CBBF004EBA79 /* NavigationStackConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackConvert.swift; sourceTree = "<group>"; };
 		4E76E0BF2C68CBCB004EBA79 /* NavigationStackOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackOutput.swift; sourceTree = "<group>"; };
@@ -260,6 +267,7 @@
 		4E4962D82C398AC3004A0532 /* SwiftUI-Beginner */ = {
 			isa = PBXGroup;
 			children = (
+				4E749A772C84DBFE007C543F /* Info.plist */,
 				4EC4321D2C7317B9002E6FC4 /* sounds */,
 				4E9896862C6C6C21005DD7EB /* GridTest */,
 				4E76E0C32C692678004EBA79 /* ToolbarTest */,
@@ -346,6 +354,16 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		4E749A702C84CEB4007C543F /* FileManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				4E749A712C84CEC8007C543F /* FileManagerTestView.swift */,
+				4E749A732C84CEE6007C543F /* FileManageTestViewModel.swift */,
+				4E749A752C84D6E0007C543F /* FileManagerHelper.swift */,
+			);
+			name = FileManagerTest;
+			sourceTree = "<group>";
+		};
 		4E76E0C32C692678004EBA79 /* ToolbarTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +377,7 @@
 		4E9896862C6C6C21005DD7EB /* GridTest */ = {
 			isa = PBXGroup;
 			children = (
+				4E749A702C84CEB4007C543F /* FileManagerTest */,
 				4E0D4AB32C833EA900A8EA0D /* NetworkingTest */,
 				4E16945F2C820B620021F5B5 /* BackgroundThreadTest */,
 				4EFB1E6A2C7E4DE300518E89 /* CoreDataTest */,
@@ -598,6 +617,7 @@
 				4E7809B22C6DBA5D00ABD46F /* ScreenNavigator.swift in Sources */,
 				4EB7F6A92C3E392200EC58CC /* InitializerTest.swift in Sources */,
 				4EA558C02C59FFD7007EFEBB /* FocusStateViewTest.swift in Sources */,
+				4E749A742C84CEE6007C543F /* FileManageTestViewModel.swift in Sources */,
 				4E76E0BC2C68CBB2004EBA79 /* NavigationStackHome.swift in Sources */,
 				4ED866692C58A2E400E19B34 /* UserDefaultTest.swift in Sources */,
 				4E1694612C820B730021F5B5 /* BackgroundThreadTestView.swift in Sources */,
@@ -620,6 +640,7 @@
 				4EA558BD2C59FC4E007EFEBB /* SwipeActionViewTest.swift in Sources */,
 				4EC5A3202C3D03400087A7CD /* TestPadding.swift in Sources */,
 				4E76E0C52C69268F004EBA79 /* ToolbarTest.swift in Sources */,
+				4E749A762C84D6E0007C543F /* FileManagerHelper.swift in Sources */,
 				4EC4321C2C731486002E6FC4 /* PlaySoundTest.swift in Sources */,
 				4E98968A2C6C6C49005DD7EB /* GridViewTest.swift in Sources */,
 				4E76E0C72C693C1E004EBA79 /* PremiumVersionScreen.swift in Sources */,
@@ -646,6 +667,7 @@
 				4E0D441B2C4784E100A21E9C /* TestTextEditor.swift in Sources */,
 				4E4963092C3A4BB5004A0532 /* TestColor.swift in Sources */,
 				4E49630D2C3A5B2F004A0532 /* TestIcon.swift in Sources */,
+				4E749A722C84CEC8007C543F /* FileManagerTestView.swift in Sources */,
 				4E0D4AB52C833EC000A8EA0D /* NetworkTestView.swift in Sources */,
 				4EE58E2F2C575DA400C3C26E /* EnvironmentObjectViewModel.swift in Sources */,
 				4EB7F6AF2C3E467200EC58CC /* GridTest.swift in Sources */,
@@ -826,6 +848,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Beginner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Beginner/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = UIFileSharingEnabled;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -862,6 +888,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Beginner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Beginner/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = UIFileSharingEnabled;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

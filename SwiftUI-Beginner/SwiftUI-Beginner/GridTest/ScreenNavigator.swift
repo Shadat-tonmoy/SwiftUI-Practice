@@ -89,6 +89,12 @@ class ScreenNavigator : ObservableObject {
     }
     
     
+    func openFileManagerTestScreen() {
+        paths.append(.fileManagerTest)
+        print("Opening file manager test screen")
+        otherScreen = true
+    }
+    
     
     
 }
