@@ -47,6 +47,8 @@ struct GridViewTest: View {
                     NetworkTestView()
                 case .fileManagerTest:
                     FileManagerTestView()
+                case .nsCacheTest:
+                    NSCacheTestView()
                 }
                 
             })
@@ -76,6 +78,7 @@ enum GridTestPath {
     case threadTest
     case networkTest
     case fileManagerTest
+    case nsCacheTest
 }
 
 

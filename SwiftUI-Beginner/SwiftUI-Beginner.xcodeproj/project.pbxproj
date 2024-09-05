@@ -15,6 +15,9 @@
 		4E1694632C820B810021F5B5 /* BackgroundThreadTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */; };
 		4E1C9E4E2C79A22C0058D1EC /* HashableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */; };
 		4E1C9E522C79A8350058D1EC /* SearchSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */; };
+		4E300F8F2C89663D00026C76 /* NSCacheTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F8E2C89663C00026C76 /* NSCacheTestView.swift */; };
+		4E300F912C89664900026C76 /* NSCacheTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F902C89664900026C76 /* NSCacheTestViewModel.swift */; };
+		4E300F932C89666200026C76 /* NSCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E300F922C89666200026C76 /* NSCacheManager.swift */; };
 		4E4962DA2C398AC3004A0532 /* SwiftUI_BeginnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962D92C398AC3004A0532 /* SwiftUI_BeginnerApp.swift */; };
 		4E4962DC2C398AC3004A0532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4962DB2C398AC3004A0532 /* ContentView.swift */; };
 		4E4962DE2C398AC4004A0532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4962DD2C398AC4004A0532 /* Assets.xcassets */; };
@@ -118,6 +121,9 @@
 		4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadTestViewModel.swift; sourceTree = "<group>"; };
 		4E1C9E4D2C79A22C0058D1EC /* HashableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableTest.swift; sourceTree = "<group>"; };
 		4E1C9E512C79A8350058D1EC /* SearchSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSortTest.swift; sourceTree = "<group>"; };
+		4E300F8E2C89663C00026C76 /* NSCacheTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheTestView.swift; sourceTree = "<group>"; };
+		4E300F902C89664900026C76 /* NSCacheTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheTestViewModel.swift; sourceTree = "<group>"; };
+		4E300F922C89666200026C76 /* NSCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheManager.swift; sourceTree = "<group>"; };
 		4E4962D62C398AC3004A0532 /* SwiftUI-Beginner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Beginner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4962D92C398AC3004A0532 /* SwiftUI_BeginnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BeginnerApp.swift; sourceTree = "<group>"; };
 		4E4962DB2C398AC3004A0532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -242,6 +248,16 @@
 				4E1694622C820B810021F5B5 /* BackgroundThreadTestViewModel.swift */,
 			);
 			path = BackgroundThreadTest;
+			sourceTree = "<group>";
+		};
+		4E300F8D2C89662500026C76 /* NSCacheTest */ = {
+			isa = PBXGroup;
+			children = (
+				4E300F8E2C89663C00026C76 /* NSCacheTestView.swift */,
+				4E300F902C89664900026C76 /* NSCacheTestViewModel.swift */,
+				4E300F922C89666200026C76 /* NSCacheManager.swift */,
+			);
+			path = NSCacheTest;
 			sourceTree = "<group>";
 		};
 		4E4962CD2C398AC3004A0532 = {
@@ -377,6 +393,7 @@
 		4E9896862C6C6C21005DD7EB /* GridTest */ = {
 			isa = PBXGroup;
 			children = (
+				4E300F8D2C89662500026C76 /* NSCacheTest */,
 				4E749A702C84CEB4007C543F /* FileManagerTest */,
 				4E0D4AB32C833EA900A8EA0D /* NetworkingTest */,
 				4E16945F2C820B620021F5B5 /* BackgroundThreadTest */,
@@ -615,6 +632,7 @@
 				4E98968E2C6C9CE3005DD7EB /* GridTestMagnification.swift in Sources */,
 				4E76E0C92C693D10004EBA79 /* MoreOptionScreen.swift in Sources */,
 				4E7809B22C6DBA5D00ABD46F /* ScreenNavigator.swift in Sources */,
+				4E300F8F2C89663D00026C76 /* NSCacheTestView.swift in Sources */,
 				4EB7F6A92C3E392200EC58CC /* InitializerTest.swift in Sources */,
 				4EA558C02C59FFD7007EFEBB /* FocusStateViewTest.swift in Sources */,
 				4E749A742C84CEE6007C543F /* FileManageTestViewModel.swift in Sources */,
@@ -629,6 +647,7 @@
 				4EC4321A2C70A0BC002E6FC4 /* MaskTest.swift in Sources */,
 				4E6A686F2C48DDC7009C8C0C /* TabTest.swift in Sources */,
 				4EC5A31C2C3CEB080087A7CD /* TestBackground.swift in Sources */,
+				4E300F932C89666200026C76 /* NSCacheManager.swift in Sources */,
 				4EE58E312C575DD200C3C26E /* EnvironmentObjectView.swift in Sources */,
 				4E6984C02C40FA68006550B5 /* TestConditional.swift in Sources */,
 				4E76E0C02C68CBCB004EBA79 /* NavigationStackOutput.swift in Sources */,
@@ -636,6 +655,7 @@
 				4EC5A31E2C3CFE010087A7CD /* TestStack.swift in Sources */,
 				4EB7F6B32C3E556F00EC58CC /* SafeAreaTest.swift in Sources */,
 				4E1C9E522C79A8350058D1EC /* SearchSortTest.swift in Sources */,
+				4E300F912C89664900026C76 /* NSCacheTestViewModel.swift in Sources */,
 				4EFB1E6C2C7E4DF800518E89 /* CoreDataTestView.swift in Sources */,
 				4EA558BD2C59FC4E007EFEBB /* SwipeActionViewTest.swift in Sources */,
 				4EC5A3202C3D03400087A7CD /* TestPadding.swift in Sources */,

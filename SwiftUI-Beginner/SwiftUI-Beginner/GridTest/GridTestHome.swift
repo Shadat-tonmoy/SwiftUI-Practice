@@ -98,6 +98,11 @@ struct GridTestHome: View {
                             screenNavigator.openFileManagerTestScreen()
                         }
                     
+                    GridItemButton(iconName: "book.pages.fill", title: "NSCacheManager")
+                        .onTapGesture {
+                            screenNavigator.openNSCacheManagerTestScreen()
+                        }
+                    
                 })
                 
             }

@@ -96,5 +96,12 @@ class ScreenNavigator : ObservableObject {
     }
     
     
+    func openNSCacheManagerTestScreen(){
+        paths.append(.nsCacheTest)
+        print("Opening nsCache test screen")
+        otherScreen = true
+    }
+    
+    
     
 }
